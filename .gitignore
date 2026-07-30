@@ -4,3 +4,5 @@ target/
 tmp/
 work/
 Servers/
+build/
+*.class
