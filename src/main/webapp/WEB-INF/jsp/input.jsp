@@ -4,6 +4,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/style.css">
 		<title>お問い合わせフォーム</title>
 	</head>
 	
@@ -17,10 +18,10 @@
 		性別：
 		<input type="radio" name="sex" value="男性">男性
 		<input type="radio" name="sex" value="女性">女性<br/>
-		お問い合わせ種別：
-		<input type="checkbox" name="cates" value="製品について">製品について
-		<input type="checkbox" name="cates" value="サービスについて">サービスについて
-		<input type="checkbox" name="cates" value="採用について">採用について
+		お問い合わせ種別：<br/>
+		<input type="checkbox" name="cates" value="製品について">製品について<br/>
+		<input type="checkbox" name="cates" value="サービスについて">サービスについて<br/>
+		<input type="checkbox" name="cates" value="採用について">採用について<br/>
 		<input type="checkbox" name="cates" value="その他">その他<br/>
 		住まいエリア：
 		<select name="pref">

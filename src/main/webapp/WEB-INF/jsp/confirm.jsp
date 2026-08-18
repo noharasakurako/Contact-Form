@@ -5,6 +5,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/style.css">
 		<title>お問い合わせ内容確認</title>
 	</head>
 
