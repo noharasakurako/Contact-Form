@@ -6,3 +6,6 @@ work/
 Servers/
 build/
 *.class
+.settings/
+.classpath
+.project
