@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
 
 <!DOCTYPE html>
 <html>
@@ -19,17 +20,11 @@
 			性別：${sex}<br/>
 			<input type="hidden" name="sex" value="${sex}"><br/>
 			お問い合わせ種別：
-			<%
-			String[] cates = (String[]) request.getAttribute("cates");
-			if (cates != null) {
-			    for (String cate : cates) {
-			%>
-			<%= cate %><br/>
-			<input type="hidden" name="cates" value="<%= cate %>">
-			<%
-			    }
-			}
-			%><br/>
+			<c:forEach var="cate" items="${cates}">
+				${cate}<br/>
+    			<input type="hidden" name="cates" value="${cate}">
+			</c:forEach>
+			<br/>
 			住まいエリア：${pref}<br/>
 			<input type="hidden" name="pref" value="${pref}"><br/>
 			メッセージ：

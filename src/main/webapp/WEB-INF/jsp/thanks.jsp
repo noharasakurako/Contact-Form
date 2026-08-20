@@ -15,16 +15,10 @@
 			メールアドレス：${mail_address}<br/>
 			性別：${sex}<br/>
 			お問い合わせ種別：
-			<%
-			String[] cates = (String[]) request.getAttribute("cates");
-			if (cates != null) {
-			    for (String cate : cates) {
-			%>
-			<%= cate %><br/>
-			<%
-			    }
-			}
-			%><br/>
+			<c:forEach var="cate" items="${cates}">
+				${cate}<br/>
+			</c:forEach>
+			<br/>
 			住まいエリア：${pref}<br/>
 			メッセージ：
 			<p style="white-space: pre-wrap;">${message}</p>
