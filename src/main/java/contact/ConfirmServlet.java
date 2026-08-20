@@ -23,7 +23,7 @@ public class ConfirmServlet extends HttpServlet {
         request.getRequestDispatcher("/WEB-INF/jsp/confirm.jsp")
                .forward(request, response);
     }
-    private static void setRequestAttributes(HttpServletRequest request) {
+     static void setRequestAttributes(HttpServletRequest request) {
 	    String onamae = request.getParameter("onamae");
 	    String mailAddress = request.getParameter("mail_address");
 	    String sex = request.getParameter("sex");
