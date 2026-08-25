@@ -12,17 +12,17 @@
 
 	<body>
 		<h1>お問い合わせ完了</h1><br/>
-			名前：${onamae}<br/>
-			メールアドレス：${mail_address}<br/>
-			性別：${sex}<br/>
+			名前：<c:out value="${onamae}" /><br/>
+			メールアドレス：<c:out value="${mail_address}" /><br/>
+			性別：<c:out value="${sex}" /><br/>
 			お問い合わせ種別：
 			<c:forEach var="cate" items="${cates}">
-				${cate}<br/>
+				<c:out value="${cate}" /><br/>
 			</c:forEach>
 			<br/>
-			住まいエリア：${pref}<br/>
+			住まいエリア：<c:out value="${pref}" /><br/>
 			メッセージ：
-			<p style="white-space: pre-wrap;">${message}</p>
+			<p style="white-space: pre-wrap;"><c:out value="${message}" /></p>
 			<a href="${pageContext.request.contextPath}/contact/input">入力画面へ戻る</a>
 	</body>
 </html>
