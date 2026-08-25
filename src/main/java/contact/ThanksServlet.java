@@ -18,7 +18,7 @@ public class ThanksServlet extends HttpServlet {
             throws ServletException, IOException {
     	request.setCharacterEncoding("UTF-8");
     	
-    	ConfirmServlet.setRequestAttributes(request);
+    	ContactFormUtil.setRequestAttributes(request);
     	
         request.getRequestDispatcher("/WEB-INF/jsp/thanks.jsp")
         .forward(request, response);
